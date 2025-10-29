@@ -1,4 +1,4 @@
-<svg width="100%" height="auto" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated solar system">
+<svg width="100%" height="auto" viewBox="0 0 600 300" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated solar system">
   <defs>
     <!-- Sun gradient -->
     <radialGradient id="sunGradient" cx="50%" cy="50%" r="60%">
@@ -26,60 +26,60 @@
 
   <g clip-path="url(#roundMask)">
     <!-- Sun at center -->
-    <g transform="translate(400,150)">
+    <g transform="translate(300,150)">
       <circle r="30.5" fill="url(#sunGradient)" filter="url(#glow)"/>
       <animate attributeName="r" values="28.5;30.5;28.5" dur="3s" repeatCount="indefinite"/>
     </g>
 
     <!-- Mercury -->
     <g>
-      <circle cx="435" cy="150" r="1" fill="#b1b1b1"/>
-      <animateTransform attributeName="transform" type="rotate" from="0 400 150" to="360 400 150" dur="5s" repeatCount="indefinite"/>
+      <circle cx="335" cy="150" r="1" fill="#b1b1b1"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 300 150" to="360 300 150" dur="5s" repeatCount="indefinite"/>
     </g>
 
     <!-- Venus -->
     <g>
-      <circle cx="443" cy="150" r="2.5" fill="#d9b47c"/>
-      <animateTransform attributeName="transform" type="rotate" from="0 400 150" to="360 400 150" dur="8s" repeatCount="indefinite"/>
+      <circle cx="343" cy="150" r="2.5" fill="#d9b47c"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 300 150" to="360 300 150" dur="8s" repeatCount="indefinite"/>
     </g>
 
     <!-- Earth -->
     <g>
-      <circle cx="453" cy="150" r="2.88" fill="#4fa3ff"/>
-      <animateTransform attributeName="transform" type="rotate" from="0 400 150" to="-360 400 150" dur="10s" repeatCount="indefinite"/>
+      <circle cx="353" cy="150" r="2.88" fill="#4fa3ff"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 300 150" to="-360 300 150" dur="10s" repeatCount="indefinite"/>
     </g>
 
     <!-- Mars -->
     <g>
-      <circle cx="465" cy="150" r="1.53" fill="#e06b4f"/>
-      <animateTransform attributeName="transform" type="rotate" from="0 400 150" to="360 400 150" dur="14s" repeatCount="indefinite"/>
+      <circle cx="365" cy="150" r="1.53" fill="#e06b4f"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 300 150" to="360 300 150" dur="14s" repeatCount="indefinite"/>
     </g>
 
     <!-- Jupiter -->
     <g>
-      <circle cx="485" cy="150" r="13" fill="#d8b26e"/>
-      <animateTransform attributeName="transform" type="rotate" from="0 400 150" to="-360 400 150" dur="22s" repeatCount="indefinite"/>
+      <circle cx="385" cy="150" r="13" fill="#d8b26e"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 300 150" to="-360 300 150" dur="22s" repeatCount="indefinite"/>
     </g>
 
     <!-- Saturn -->
     <g>
       <g>
-        <circle cx="510" cy="150" r="11" fill="#e3c98d"/>
-        <ellipse cx="510" cy="150" rx="13" ry="2" fill="none" stroke="#c6a15c" stroke-width="0.8"/>
+        <circle cx="410" cy="150" r="11" fill="#e3c98d"/>
+        <ellipse cx="410" cy="150" rx="13" ry="2" fill="none" stroke="#c6a15c" stroke-width="0.8"/>
       </g>
-      <animateTransform attributeName="transform" type="rotate" from="0 400 150" to="360 400 150" dur="28s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 300 150" to="360 300 150" dur="28s" repeatCount="indefinite"/>
     </g>
 
     <!-- Uranus -->
     <g>
-      <circle cx="525" cy="150" r="5.9" fill="#7de3e2"/>
-      <animateTransform attributeName="transform" type="rotate" from="0 400 150" to="-360 400 150" dur="36s" repeatCount="indefinite"/>
+      <circle cx="425" cy="150" r="5.9" fill="#7de3e2"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 300 150" to="-360 300 150" dur="36s" repeatCount="indefinite"/>
     </g>
 
     <!-- Neptune -->
     <g>
-      <circle cx="540" cy="150" r="5.5" fill="#4666ff"/>
-      <animateTransform attributeName="transform" type="rotate" from="0 400 150" to="360 400 150" dur="44s" repeatCount="indefinite"/>
+      <circle cx="440" cy="150" r="5.5" fill="#4666ff"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 300 150" to="360 300 150" dur="44s" repeatCount="indefinite"/>
     </g>
   </g>
 </svg>
