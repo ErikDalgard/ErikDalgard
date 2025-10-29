@@ -1,0 +1,85 @@
+<svg width="100%" height="auto" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated solar system">
+  <defs>
+    <!-- Sun gradient -->
+    <radialGradient id="sunGradient" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#fffad7"/>
+      <stop offset="60%" stop-color="#ffcf48"/>
+      <stop offset="100%" stop-color="#ff8c00"/>
+    </radialGradient>
+
+    <!-- Glow filter for sun -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="roundMask">
+      <rect width="100%" height="100%" rx="20" ry="20"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#0d1117" rx="20" ry="20"/>
+
+  <g clip-path="url(#roundMask)">
+    <!-- Sun at center -->
+    <g transform="translate(400,150)">
+      <circle r="30.5" fill="url(#sunGradient)" filter="url(#glow)"/>
+      <animate attributeName="r" values="28.5;30.5;28.5" dur="3s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Mercury -->
+    <g>
+      <circle cx="435" cy="150" r="1" fill="#b1b1b1"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 400 150" to="360 400 150" dur="5s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Venus -->
+    <g>
+      <circle cx="443" cy="150" r="2.5" fill="#d9b47c"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 400 150" to="360 400 150" dur="8s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Earth -->
+    <g>
+      <circle cx="453" cy="150" r="2.88" fill="#4fa3ff"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 400 150" to="-360 400 150" dur="10s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Mars -->
+    <g>
+      <circle cx="465" cy="150" r="1.53" fill="#e06b4f"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 400 150" to="360 400 150" dur="14s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Jupiter -->
+    <g>
+      <circle cx="485" cy="150" r="13" fill="#d8b26e"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 400 150" to="-360 400 150" dur="22s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Saturn -->
+    <g>
+      <g>
+        <circle cx="510" cy="150" r="11" fill="#e3c98d"/>
+        <ellipse cx="510" cy="150" rx="13" ry="2" fill="none" stroke="#c6a15c" stroke-width="0.8"/>
+      </g>
+      <animateTransform attributeName="transform" type="rotate" from="0 400 150" to="360 400 150" dur="28s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Uranus -->
+    <g>
+      <circle cx="525" cy="150" r="5.9" fill="#7de3e2"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 400 150" to="-360 400 150" dur="36s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Neptune -->
+    <g>
+      <circle cx="540" cy="150" r="5.5" fill="#4666ff"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 400 150" to="360 400 150" dur="44s" repeatCount="indefinite"/>
+    </g>
+  </g>
+</svg>
