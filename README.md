@@ -1,4 +1,4 @@
-<img src="planets.svg" style="width:66%; height:auto; display:block; margin:1.5rem auto;" alt="Animated solar system">
+<img src="planets.svg" style="width:100%; height:auto; display:block; margin:1.5rem auto;" alt="Animated solar system">
 
 
 <h1 align = "center"> Hi, I’m Erik 👋 </h1>
