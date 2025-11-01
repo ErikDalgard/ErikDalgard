@@ -57,29 +57,35 @@
 
     <!-- Jupiter -->
     <g>
-      <circle cx="385" cy="150" r="13" fill="#d8b26e"/>
+      <circle cx="381" cy="150" r="12" fill="#d8b26e"/>
       <animateTransform attributeName="transform" type="rotate" from="0 300 150" to="-360 300 150" dur="22s" repeatCount="indefinite"/>
     </g>
 
     <!-- Saturn -->
     <g>
       <g>
-        <circle cx="410" cy="150" r="11" fill="#e3c98d"/>
-        <ellipse cx="410" cy="150" rx="13" ry="2" fill="none" stroke="#c6a15c" stroke-width="0.8"/>
+        <circle cx="408" cy="150" r="10" fill="#e3c98d"/>
+        <ellipse cx="408" cy="150" rx="13" ry="2" fill="none" stroke="#c6a15c" stroke-width="0.8"/>
       </g>
       <animateTransform attributeName="transform" type="rotate" from="0 300 150" to="360 300 150" dur="28s" repeatCount="indefinite"/>
     </g>
 
     <!-- Uranus -->
     <g>
-      <circle cx="425" cy="150" r="5.9" fill="#7de3e2"/>
+      <circle cx="427" cy="150" r="5.6" fill="#7de3e2"/>
       <animateTransform attributeName="transform" type="rotate" from="0 300 150" to="-360 300 150" dur="36s" repeatCount="indefinite"/>
     </g>
 
     <!-- Neptune -->
     <g>
-      <circle cx="440" cy="150" r="5.5" fill="#4666ff"/>
+      <circle cx="440" cy="150" r="5.1" fill="#4666ff"/>
       <animateTransform attributeName="transform" type="rotate" from="0 300 150" to="360 300 150" dur="44s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Pluto -->
+    <g>
+      <circle cx="448" cy="150" r="1" fill="#e3dad1"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 300 150" to="-360 300 150" dur="44s" repeatCount="indefinite"/>
     </g>
   </g>
 </svg>
